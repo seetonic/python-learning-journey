@@ -1,26 +1,21 @@
 # 🐍 Python Learning Journey
 
-A collection of small Python projects built while learning and practicing Python programming.
+A collection of small Python projects I built while learning and practicing Python.
 
-This repository documents my progress from basic Python concepts to more practical, real-world programs. Each project focuses on applying what I have learned and improving my programming, problem-solving, and logical thinking skills.
+This repository documents my progress from basic Python fundamentals to more practical programming concepts. Each project is an opportunity to apply what I have learned, improve my problem-solving skills, and gradually build better programming habits.
 
-## 🎯 Goals
-
-* Learn Python fundamentals
-* Improve programming logic and problem-solving
-* Practice writing Python programs consistently
-* Build small projects while learning
-* Gradually move from beginner concepts to more advanced applications
-* Create a strong foundation for future software development and data science work
+---
 
 ## 📚 Projects
 
-| #  | Project                                                                              | Concepts Practiced                          |
+I am building these projects step by step as I learn new Python concepts.
+
+| #  | Project                                                                              | Main Concepts                               |
 | -- | ------------------------------------------------------------------------------------ | ------------------------------------------- |
-| 01 | [Mad Libs](./01.%20mad%20libs)                                                       | Strings, input, variables                   |
+| 01 | [Mad Libs](./01.%20mad%20libs)                                                       | Variables, strings, user input              |
 | 02 | [Area Calculator](./02.%20area%20calculator)                                         | Variables, input, mathematical operations   |
 | 03 | [Shopping Cart](./03.%20shopping%20cart)                                             | Variables, input, calculations              |
-| 04 | [Circumference, Area & Hypotenuse](./04.%20Circumference,%20area%20and%20hypotenuse) | Math, `math` module, user input             |
+| 04 | [Circumference, Area & Hypotenuse](./04.%20Circumference,%20area%20and%20hypotenuse) | `math` module, calculations, user input     |
 | 05 | [Simple Calculator](./05.%20simple%20calculator)                                     | Operators, conditions, user input           |
 | 06 | [Validate Username](./06.%20validate%20username)                                     | Strings, conditions, validation             |
 | 07 | [Email Slicer](./07.%20email%20slicer)                                               | Strings, slicing, string methods            |
@@ -29,19 +24,27 @@ This repository documents my progress from basic Python concepts to more practic
 | 10 | [Countdown Timer](./10.%20countdown%20timer)                                         | Loops, time handling                        |
 | 11 | [Shopping Cart Using List](./11.%20shopping%20cart%20using%20list)                   | Lists, loops, user input                    |
 | 12 | [Quiz Game](./12.%20quiz%20game)                                                     | Conditions, loops, variables, logic         |
-| 13 | [Simple Banking Program](./13.%20simple%20banking%20program)                         | Functions, conditions, loops, program logic |
+| 13 | [Simple Banking Program](./13.%20simple%20banking%20program)                         | Functions, loops, conditions, program logic |
 | 14 | [Alarm Clock](./14.%20alarm%20clock)                                                 | Time, loops, program control                |
 | 15 | [Pokémon Info Viewer](./15.%20pokemon%20info%20viewer)                               | APIs, requests, JSON, external data         |
-| 16 | [QR Code Generator](./16.%20QR%20code%20generator)                                   | Python libraries, QR generation             |
+| 16 | [QR Code Generator](./16.%20QR%20code%20generator)                                   | Python libraries, QR code generation        |
 | 17 | [Music Player](./17.%20Music%20Player)                                               | Python libraries, audio, application logic  |
+| 18 | [Banking Program Using OOP](./18.%20banking%20program%20using%20OOP)                 | Classes, objects, methods, OOP              |
+
+**Current progress: 18 projects** 🚀
+
+---
 
 ## 🗂️ Learning Progress
 
-### 🟢 Beginner — Python Fundamentals
+### 🟢 1. Python Fundamentals
 
-Started with small programs to understand the basic building blocks of Python:
+The journey started with simple programs to understand the basic building blocks of Python.
+
+Topics include:
 
 * Variables
+* Data types
 * User input
 * Strings
 * Numbers
@@ -50,49 +53,129 @@ Started with small programs to understand the basic building blocks of Python:
 * Conditional statements
 * Basic validation
 
-### 🔵 Problem Solving & Logic
+Projects:
 
-Then moved into programs that require more logic and program flow:
+* Mad Libs
+* Area Calculator
+* Shopping Cart
+* Circumference, Area & Hypotenuse
+* Simple Calculator
+* Validate Username
+* Email Slicer
+* Interest Calculator
 
-* Loops
+---
+
+### 🔵 2. Control Flow & Problem Solving
+
+The next stage focused on making programs more interactive and logical.
+
+Topics include:
+
+* `if`, `elif`, `else`
+* `for` loops
+* `while` loops
 * Lists
 * String manipulation
-* Functions
 * Input validation
-* Calculations
 * Program control
+* Basic functions
+* Problem-solving
 
-### 🟣 Practical Python
+Projects:
 
-The projects gradually became more practical:
+* Text Rectangle
+* Countdown Timer
+* Shopping Cart Using List
+* Quiz Game
+* Simple Banking Program
+* Alarm Clock
 
-* Countdown timer
-* Quiz game
-* Banking program
-* Alarm clock
-* API-based Pokémon information viewer
-* QR code generator
-* Music player
+---
 
-## 🛠️ Technologies
+### 🟣 3. Practical Python
 
-* **Python 3**
-* Python Standard Library
-* Third-party Python libraries
+The projects then started using Python for more practical tasks.
+
+Topics include:
+
+* External APIs
+* HTTP requests
+* JSON data
+* Python libraries
+* Working with external data
+* Audio
+* QR code generation
+
+Projects:
+
+* Pokémon Info Viewer
+* QR Code Generator
+* Music Player
+
+---
+
+### 🟠 4. Object-Oriented Programming
+
+The latest stage introduces **Object-Oriented Programming (OOP)**.
+
+Project:
+
+* Banking Program Using OOP
+
+Concepts being explored:
+
+* Classes
+* Objects
+* Attributes
+* Methods
+* Constructors
+* Encapsulation
+* Organizing programs using objects
+
+This is an important step toward building larger and more maintainable Python applications.
+
+---
+
+## 🛠️ Technologies & Tools
+
+### Programming
+
+* 🐍 Python 3
+
+### Python Concepts
+
+* Variables
+* Data types
+* Strings
+* Operators
+* Conditions
+* Loops
+* Lists
+* Functions
+* Object-Oriented Programming
 * APIs
 * JSON
+* Modules
+* External libraries
+
+### Development Tools
+
 * Git
 * GitHub
+* VS Code
+
+---
 
 ## 🚀 How to Run
 
 ### 1. Install Python
 
-Download and install Python 3 from:
+Download Python from:
 
-https://www.python.org/
+[Python.org](https://www.python.org/?utm_source=chatgpt.com)
 
-Check that Python is installed:
+Check your Python installation:
 
 ```bash
 python --version
@@ -104,7 +187,7 @@ python --version
 git clone https://github.com/seetonic/python-learning-journey.git
 ```
 
-### 3. Enter the repository
+### 3. Open the project
 
 ```bash
 cd python-learning-journey
@@ -118,40 +201,67 @@ For example:
 python "01. mad libs/main.py"
 ```
 
-Some projects may require additional Python packages. Install the required packages before running those projects.
+Or run any other project's `main.py`:
+
+```bash
+python "18. banking program using OOP/main.py"
+```
+
+Some projects may require additional Python packages. If a project requires a package, install it using:
+
+```bash
+pip install package-name
+```
+
+---
 
 ## 📈 What's Next?
 
 This repository is an ongoing learning journey.
 
-Future projects will gradually explore:
+As I continue learning Python, I plan to explore:
 
-* Functions
-* Object-Oriented Programming
 * Exception Handling
 * File Handling
 * Modules & Packages
+* Dictionaries & Sets
+* Tuples
+* List Comprehensions
+* Lambda Functions
+* Advanced Functions
+* Object-Oriented Programming
+* Inheritance
+* Polymorphism
+* Encapsulation
 * Data Structures
 * Algorithms
-* APIs
 * Databases
+* SQL
 * Automation
 * Testing
+* Web Development
+* APIs
 * NumPy
 * Pandas
+* Data Visualization
 * Data Science
 * Machine Learning
 
-## 📌 Why This Repository?
-
-Instead of only watching tutorials, I am using small projects to practice what I learn.
-
-The goal is to **learn → build → make mistakes → solve problems → improve**.
-
-This repository will continue to grow as my Python skills improve.
+The projects will gradually become larger and more complex as my skills improve.
 
 ---
 
-⭐ **Learning Python one project at a time.** 🐍
+## 🧠 Learning Philosophy
 
-> This repository is primarily a personal learning and practice project. The code will improve and become more complex as I progress.
+I don't want to learn Python only by watching tutorials.
+
+My approach is:
+
+**Learn → Practice → Build → Make Mistakes → Debug → Improve → Build Again**
+
+Each project gives me an opportunity to turn a concept I learned into something I can actually run.
+
+
+**18 projects completed and counting.** 🐍
+
+⭐ **Learning Python one project at a time.** 🐍
