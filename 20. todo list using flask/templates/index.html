@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Todo List</title>
+  </head>
+  <body class="mx-auto max-w-md p-6 font-sans">
+    <h1 class="mb-4 text-2xl font-bold">My Todo List</h1>
+
+    <form action="/add" method="post" class="mb-6 flex gap-2">
+      <input
+        type="text"
+        name="new_todo"
+        placeholder="Enter todo..."
+        class="flex-1 border p-2"
+      />
+      <button type="submit" class="bg-blue-500 px-4 text-white">Add</button>
+    </form>
+
+    {% for todo in todo_list %}
+    <div class="mb-3 border-b pb-3">
+      <p
+        class="font-medium {% if todo.complete %}text-slate-400 line-through{% else %}text-slate-800{% endif %}"
+      >
+        {{ todo.id }}. {{ todo.title }}
+      </p>
+
+      {% if todo.complete == False %}
+      <span
+        class="mt-1 inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700"
+        >Not Completed</span
+      >
+      {% else %}
+      <span
+        class="mt-1 inline-block rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700"
+        >Completed</span
+      >
+      {% endif %}
+
+      <div class="flex shrink-0 gap-2">
+        <a
+          href="/update/{{ todo.id }}"
+          class="rounded-md bg-blue-50 px-3 py-1 text-sm font-medium text-blue-600 transition hover:bg-blue-100"
+          >Update</a
+        >
+        <a
+          href="/delete/{{ todo.id }}"
+          class="rounded-md bg-red-50 px-3 py-1 text-sm font-medium text-red-600 transition hover:bg-red-100"
+          >Delete</a
+        >
+      </div>
+    </div>
+    {% else %}
+    <li class="py-6 text-center text-slate-400 list-none">
+      No todos yet. Add one above!
+    </li>
+    {% endfor %}
+  </body>
+</html>
