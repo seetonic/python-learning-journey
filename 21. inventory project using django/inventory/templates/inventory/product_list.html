@@ -1,0 +1,34 @@
+{% extends "inventory/base.html" %}
+
+{% block title %} Products {% endblock title %}  
+
+{% block content %}
+
+<h2>All Products</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>SKU</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+    {% for product in products %}
+    <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.sku }}</td>
+        <td>{{ product.category|default:"-" }}</td>
+        <td>{{ product.price }}</td>
+        <td {% if product.is_low_stock %} class="low" {% endif %}>
+            {{ product.quantity }}
+        </td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="5"> No products yet.</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

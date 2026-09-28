@@ -20,3 +20,7 @@ class Product(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.sku})"
+
+    @property
+    def is_low_stock(self):
+        return self.quantity <=self.low_stock_threshold
