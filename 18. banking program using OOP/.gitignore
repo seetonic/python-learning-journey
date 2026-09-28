@@ -16,3 +16,4 @@ ENV/
 .DS_Store
 Thumbs.db
 db.sqlite
+db.sqlite3
