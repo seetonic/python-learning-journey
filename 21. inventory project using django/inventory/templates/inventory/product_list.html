@@ -5,6 +5,7 @@
 {% block content %}
 
 <h2>All Products</h2>
+<p><a href="{% url 'inventory:product_create' %}">+ Add Product</a></p>
 
 <table>
     <tr>
@@ -16,7 +17,7 @@
     </tr>
     {% for product in products %}
     <tr>
-        <td>{{ product.name }}</td>
+        <td><a href="{% url 'inventory:product_detail' product.pk %}">{{ product.name }}</a></td>
         <td>{{ product.sku }}</td>
         <td>{{ product.category|default:"-" }}</td>
         <td>{{ product.price }}</td>

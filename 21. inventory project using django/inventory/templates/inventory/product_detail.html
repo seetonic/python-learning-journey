@@ -1,0 +1,24 @@
+{% extends "inventory/base.html" %}
+
+{% block title %} {{product.name}} {% endblock %}
+
+{% block content %}
+
+<h2>{{product.name}}</h2>
+
+<p><strong>SKU:</strong>{{ product.sku }}</p>
+<p><strong>Category:</strong>{{ product.category|default:"-" }}</p>
+<p><strong>Price:</strong>${{ product.price }}</p>
+<p><strong>Stock:</strong>
+    <span {% if product.is_low_stock %} class="low" {% endif %}>{{ product.quantity}}</span>
+    {% if product.is_low_stock %} (Low Stock!) {% endif %}</p>
+<p><strong>Added:</strong>{{ product.created_at|date:"d M Y" }}</p>
+
+<p>
+    <a href="{% url 'inventory:product_update' product.pk %}">Edit</a> |
+    <a href="{% url 'inventory:product_delete' product.pk %}">Delete</a>
+</p>
+
+<a href="{% url 'inventory:product_list' %}">← Back to list</a>
+
+{% endblock %}
