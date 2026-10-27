@@ -60,7 +60,7 @@ def edit_task(tasks):
             return
 
         choose = int(input("What would you want to edit? (1) Title (2) Complete box: "))
-        if number < 1 or number > len(tasks):
+        if number < 1 or number > 2:
             print("That number is not in the list.")
             return
         elif choose == 1:
